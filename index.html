@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>КарП</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="page-heading">КарП</h1>
+            </div>
+        </header>
+        <main class="container">
+            <section class="form-wrapper">
+                                <!-- Тут установим тег form -->
+                <form name="addHero" class="form">
+                    <input class="form-input" type="text" name="title" id="title" required placeholder="Имя героя"/>
+                    <input class="form-input" type="text" name="description" id="description" required placeholder="Описание"/>
+                    <div class="form-parameters">
+                        <input class="form-input parameter-input" type="number" name="str" id="str" min="1" max="99" placeholder="Сила" />
+                        <input class="form-input parameter-input" type="number" name="agi" id="agi" min="1" max="99" placeholder="Ловкость" />
+                        <input class="form-input parameter-input" type="number" name="hp" id="hp" min="1" max="100" placeholder="Очки жизни" />
+                        <input class="form-input parameter-input" type="number" name="int" id="int" min="1" max="99" placeholder="Интеллект" />
+                    </div>
+                    <button class="form-button" id="addHero">Добавить героя</button>
+                    <p id="errorText"></p>
+                </form>
+                                <!-- Тут установим тег form -->
+            </section>
+            <section class="cards" id="cards-container">
+                <div id="cards-container"></div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
